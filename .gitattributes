@@ -1,0 +1,3 @@
+*.mod linguist-language=AMPL
+*.dat linguist-language=AMPL
+*.txt linguist-language=AMPL

@@ -41,8 +41,8 @@ How to run (AMPL)
    ampl: option solver gurobi;
 
 2. Load the model and data and solve:
-   ampl: model modelfile.txt;
-   ampl: data datafile.txt;
+   ampl: model modelfile.mod;
+   ampl: data datafile.dat;
    ampl: solve;
 
 3. Display the solution:
