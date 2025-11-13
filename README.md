@@ -1,4 +1,4 @@
-# 3‑in‑a‑Row — AMPL solution showcase
+# 3‑in‑a‑Row
 
 The 3-in-a-Row puzzle is a logic-based color-placement puzzle on an N × N grid (N is even). Some cells are pre-colored blue or white; others are empty. We want to color all empty cells so that:
 
@@ -11,19 +11,6 @@ Solve the 8×8 puzzle below (gray cells are empty; some cells are pre-colored bl
 Recreated input figure (text drawing)
 ------------------------------------
 Legend: B = pre-colored blue cell, W = pre-colored white cell, . = empty (gray)
-
-Columns → 1 2 3 4 5 6 7 8
-
-Row 1:  . W . . B . . .
-Row 2:  . W W . . . . W
-Row 3:  . . . . B . . .
-Row 4:  . . W . . . W .
-Row 5:  . . . . B B . .
-Row 6:  . . . . . . . .
-Row 7:  W W . . . . . W
-Row 8:  . . . . . . . .
-
-Rendered as a monospace grid:
 
 ```
      C1 C2 C3 C4 C5 C6 C7 C8
@@ -61,3 +48,7 @@ How to run (AMPL)
 3. Display the solution:
    ampl: display x;
 
+Solution explanation (new section)
+---------------------------------
+What the solver output means:
+- The displayed matrix x[i,j] is the puzzle solved. Each entry is 1 (blue) or 0 (white).
